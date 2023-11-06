@@ -10,6 +10,9 @@ const Navbar = () => {
         <NavLink to="/services" className={({ isActive }) =>
             isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'}>Services
         </NavLink>
+        <NavLink to="/about" className={({ isActive }) =>
+            isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'}>About
+        </NavLink>
     </>
 
 

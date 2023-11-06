@@ -22,7 +22,7 @@ const Footer = () => {
             <footer className="footer">
 
                 <aside className='flex flex-col justify-center items-center'>
-                <img src={logo} className='h-14 w-14' alt="" />
+                    <img src={logo} className='h-14 w-14' alt="" />
                     <h1 className="font-bold text-xl">SwapSavvy</h1>
                     <p>FASHIONZONE Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </aside>
@@ -40,25 +40,18 @@ const Footer = () => {
                     <a className="link link-hover">Jobs</a>
                     <a className="link link-hover">Press kit</a>
                 </nav>
-                <nav>
-                    <header className="footer-title">Legal</header>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                <nav className=''>
+                    <header className="footer-title">Social Link</header>
+                    <div className="flex gap-4 md:place-self-center md:justify-self-end">
+                        <a><BsFacebook className='text-blue-600 h-6 w-6'></BsFacebook>
+                        </a>
+                        <a><FaTwitter className='text-blue-600 h-6 w-6'></FaTwitter></a>
+                        <a><AiFillYoutube className='text-red-600 h-6 w-6'></AiFillYoutube></a>
+                    </div>
                 </nav>
             </footer>
-            <div className="footer items-center p-4 bg-base-200 text-base-content">
-                <aside className="items-center grid-flow-col">
-                    
-                    <p>Copyright © 2023 - All right reserved</p>
-                </aside>
-                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                    <a><BsFacebook className='text-blue-600 h-6 w-6'></BsFacebook>
-                    </a>
-                    <a><FaTwitter className='text-blue-600 h-6 w-6'></FaTwitter></a>
-                    <a><AiFillYoutube className='text-red-600 h-6 w-6'></AiFillYoutube></a>
-
-                </nav>
+            <div>
+                <p className='text-center pt-5'>Copyright © 2023 - All right reserved</p>
             </div>
         </div>
     );
