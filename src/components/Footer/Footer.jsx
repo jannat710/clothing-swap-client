@@ -21,8 +21,8 @@ const Footer = () => {
             </div>
             <footer className="footer">
 
-                <aside>
-
+                <aside className='flex flex-col justify-center items-center'>
+                <img src={logo} className='h-14 w-14' alt="" />
                     <h1 className="font-bold text-xl">SwapSavvy</h1>
                     <p>FASHIONZONE Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </aside>
@@ -47,19 +47,19 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
             </footer>
-            <footer className="footer items-center p-4 bg-base-200 text-base-content">
+            <div className="footer items-center p-4 bg-base-200 text-base-content">
                 <aside className="items-center grid-flow-col">
-                    <img src={logo} className='h-16 w-16' alt="" />
+                    
                     <p>Copyright © 2023 - All right reserved</p>
                 </aside>
                 <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                    <a><BsFacebook className='text-blue-600'></BsFacebook>
+                    <a><BsFacebook className='text-blue-600 h-6 w-6'></BsFacebook>
                     </a>
-                    <a><FaTwitter className='text-blue-600'></FaTwitter></a>
-                    <a href=""><AiFillYoutube className='text-red-600'></AiFillYoutube></a>
+                    <a><FaTwitter className='text-blue-600 h-6 w-6'></FaTwitter></a>
+                    <a><AiFillYoutube className='text-red-600 h-6 w-6'></AiFillYoutube></a>
 
                 </nav>
-            </footer>
+            </div>
         </div>
     );
 };
