@@ -5,13 +5,13 @@ import logo from '../../assets/images/logo.png'
 const Navbar = () => {
     const links = <>
         <NavLink to="/" className={({ isActive }) =>
-            isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'}>Home
+            isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Home
         </NavLink>
         <NavLink to="/services" className={({ isActive }) =>
-            isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'}>Services
+            isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Services
         </NavLink>
         <NavLink to="/about" className={({ isActive }) =>
-            isActive ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm'}>About
+            isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>About
         </NavLink>
     </>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {links}
                         <li>
-                            <label tabIndex={0} className="btn btn-ghost rounded-btn">Dashboard</label>
+                            <label tabIndex={0} className="btn btn-ghost rounded-btn text-[#8e4afc] ">Dashboard</label>
                             <ul tabIndex={0} className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-12">
                                 <li><a>My Service</a></li>
                                 <li><a>Add Service</a></li>
@@ -37,7 +37,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <img src={logo} className='h-12 w-12' alt="" />
-                <a className="btn btn-ghost normal-case text-xl">SwapSavvy</a>
+                <p className="font-bold text-xl">Swap<span className="text-[#8e4afc]">Savvy</span></p>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="dropdown dropdown-bottom flex justify-center items-center">
-                        <label tabIndex={0} className="btn btn-ghost rounded-btn">Dashboard</label>
+                        <label tabIndex={0} className="btn btn-ghost rounded-btn text-[#8e4afc]">Dashboard</label>
                         <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
                             <li><a>My Service</a></li>
                             <li><a>Add Service</a></li>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='/login' className="btn">Login</Link>
+                <Link to='/login' className="btn text-[#8e4afc]">Login</Link>
             </div>
         </div>
     );
