@@ -17,13 +17,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo1} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_1').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_1').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_1" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo1} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
@@ -33,13 +33,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo2} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_2').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_2').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_2" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo2} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
@@ -49,13 +49,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo3} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_3').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_3').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_3" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo3} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
@@ -65,13 +65,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo4} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_4').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_4').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_4" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo4} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
@@ -81,13 +81,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo5} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_5').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_5').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_5" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo5} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
@@ -97,13 +97,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo6} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_6').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_6').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_6" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo6} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
@@ -113,13 +113,13 @@ const Gallery = () => {
                     <div className="relative">
                         <img className="h-52 w-40 rounded-md" src={photo7} alt="" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-                            <button onClick={() => document.getElementById('my_modal_7').showModal()} className="btn bg-[#8e4afc] text-white border-none btn-sm">View</button>
+                            <button onClick={() => document.getElementById('my_modal_7').showModal()} className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white">View</button>
                             <dialog id="my_modal_7" className="modal">
                                 <div className="modal-box w-48">
                                     <img className="h-52 w-full rounded-md pb-2" src={photo7} alt="" />
                                     <div className="">
                                         <form method="dialog">
-                                            <button className="btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white flex justify-end items-center mx-auto">Close</button>
+                                            <button className="btn bg-[#8e4afc] text-white border-none btn-sm mx flex justify-end items-center mx-auto">Close</button>
                                         </form>
                                     </div>
                                 </div>
