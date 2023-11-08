@@ -1,8 +1,13 @@
 import Lottie from "lottie-react";
-import login from '../../assets/login.json'
+import loginAnimation from '../../assets/loginAnimation.json'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Login = () => {
+    const { user,login } = useContext(AuthContext);
+    console.log(user,login)
+
     const handleLogin = e => {
         e.preventDefault();
         const form = e.target;
@@ -18,7 +23,7 @@ const Login = () => {
             <div>
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <Lottie animationData={login}></Lottie>
+                        <Lottie animationData={loginAnimation}></Lottie>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
