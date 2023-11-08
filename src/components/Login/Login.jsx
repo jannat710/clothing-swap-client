@@ -3,6 +3,14 @@ import login from '../../assets/login.json'
 import { Link } from "react-router-dom";
 
 const Login = () => {
+    const handleLogin = e => {
+        e.preventDefault();
+        const form = e.target;
+        const email= form.email.value;
+        const password= form.password.value;
+        console.log(email,password)
+
+    }
     return (
 
         <div>
@@ -13,18 +21,18 @@ const Login = () => {
                         <Lottie animationData={login}></Lottie>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered" required />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-outline text-[#8e4afc] hover:bg-[#8e4afc] hover:border-none hover:text-white">Login</button>
