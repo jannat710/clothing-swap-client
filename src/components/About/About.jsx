@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
             <Helmet><title>SwapSavvy | About</title></Helmet>
-            <h1 className="text-5xl font-bold pt-10 text-center"><span className="text-[#8e4afc]">About </span> Us</h1>
+            <h1 className="text-4xl font-bold pt-10 text-center"><span className="text-[#8e4afc]">About </span> Us</h1>
             <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10">
             <div className=" h-full w-full md:h-1/2 md:w-1/3 lg:h-1/2 lg:w-1/3  p-9">
                 <img src={pic} alt="" />

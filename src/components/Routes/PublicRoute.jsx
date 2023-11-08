@@ -7,6 +7,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import About from "../About/About";
 import PrivateRoute from "./PrivateRoute";
+import PopularServices from "../Home/PopularServices";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
       children:[
         {
             path:'/',
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader:()=>fetch(`http://localhost:5000/services`),
         },
         {
             path:'/services',
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
         {
             path:'/about',
             element:<PrivateRoute><About></About></PrivateRoute>
+        },
+        {
+          path:'/services',
+          element:<PopularServices></PopularServices>
         }
       ]
     },

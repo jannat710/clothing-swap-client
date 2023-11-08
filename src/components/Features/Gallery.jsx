@@ -10,7 +10,7 @@ import photo7 from '../../assets/images/photo7.jpg'
 const Gallery = () => {
     return (
         <div>
-            <h1 className="text-center text-5xl font-bold pt-10">View <span className="text-[#8e4afc]">Gallery</span></h1>
+            <h1 className="text-center text-4xl font-bold pt-10">View <span className="text-[#8e4afc]">Gallery</span></h1>
             <p className="text-center py-5">Welcome to our photo gallery! Explore the stunning collection of clothing swap<br /> moments captured in these pictures.</p>
             <Marquee direction="left" speed={70} pauseOnHover={true} gradient={true}>
                 <div className="flex gap-6">

@@ -3,7 +3,7 @@ import avater from '../../assets/images/avater.jpg'
 const Support = () => {
   return (
     <div>
-      <h1 className="text-5xl font-bold pt-10 text-center">Connect with <span className="text-[#8e4afc]">Customers</span></h1>
+      <h1 className="text-4xl font-bold pt-10 text-center">Connect with <span className="text-[#8e4afc]">Customers</span></h1>
       <div className="flex justify-start items-center">
         <div className="avatar online">
           <div className="w-24 rounded-full">

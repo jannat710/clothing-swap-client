@@ -1,0 +1,34 @@
+[
+    {
+      "serviceImage": "https://i.ibb.co/2cMrS69/swapshop.jpg",
+      "serviceName": "Swap Shop",
+      "serviceDescription": "Swap your clothes with others in the community",
+      "serviceProviderImage": "https://i.ibb.co/FK2cHcJ/p1.jpg",
+      "serviceProviderName": "Ema John",
+      "servicePrice": "Free"
+    },
+    {
+      "serviceImage": "https://i.ibb.co/9tS3M9W/swapmeet.jpg",
+      "serviceName": "Swap Meet",
+      "serviceDescription": "Join us for a monthly clothing swap event",
+      "serviceProviderImage": "https://i.ibb.co/wd5b3KK/p2.jpg",
+      "serviceProviderName": "Lydia Abbot",
+      "servicePrice": "$10 per event"
+    },
+    {
+      "serviceImage": "https://i.ibb.co/RNDdxrx/swapbox.jpg",
+      "serviceName": "Swap Box",
+      "serviceDescription": "Get a box of pre-loved clothes delivered to your doorstep",
+      "serviceProviderImage": "https://i.ibb.co/cCQNWGC/p3.jpg",
+      "serviceProviderName": "Segal Coaching",
+      "servicePrice": "$25 per box"
+    },
+    {
+      "serviceImage": "https://i.ibb.co/fSgP6Td/swapparty.jpg",
+      "serviceName": "Swap Party",
+      "serviceDescription": "Host a clothing swap party with your friends and family",
+      "serviceProviderImage": "https://i.ibb.co/hDbPTZr/p4.jpg",
+      "serviceProviderName": "Tommy ton",
+      "servicePrice": "Free"
+    }
+  ]

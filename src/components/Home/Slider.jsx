@@ -9,7 +9,7 @@ const Slider = () => {
             <div id="slide1" className="carousel-item relative w-full flex justify-center items-center">
                 <img src={slider1} className="w-full h-[80vh] bg-black opacity-50" />
                 <div className='absolute'>
-                    <h1 className='text-center text-5xl font-bold'>Clothing Swap</h1>
+                    <h1 className='text-center text-4xl font-bold'>Clothing Swap</h1>
                     <p className='text-center text-lg font-normal py-5'>A clothing swap is like a fashion fiesta where you and your stylish pals gather to trade your pre-loved garments <br/> for some fabulous new finds. Its a great way to revamp your wardrobe while being eco-friendly!</p>
                     <button className='btn bg-[#8e4afc] text-white border-none btn-md px-5 flex justify-center items-center mx-auto'>Donate</button>
                     </div>
