@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch(`http://localhost:5000/services`),
+        loader: () => fetch(`https://clothing-swap-server.vercel.app/services`),
       },
       {
         path: '/services',

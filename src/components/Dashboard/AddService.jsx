@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
         area,
         description
     }
-    fetch('http://localhost:5000/services', {
+    fetch('https://clothing-swap-server.vercel.app/services', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
