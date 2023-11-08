@@ -63,9 +63,17 @@ const Navbar = () => {
                                     Dashboard
                                 </label>
                                 <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
-                                    <li><a>My Service</a></li>
-                                    <li><a>Add Service</a></li>
-                                    <li><a>My Schedule</a></li>
+                                    <NavLink to="/myservice" className={({ isActive }) =>
+                                        isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>My Service
+                                    </NavLink>
+                                    <NavLink to="/addservice" className={({ isActive }) =>
+                                        isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Add Service
+                                    </NavLink>
+                                    <NavLink to="/myschedule" className={({ isActive }) =>
+                                        isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>My Schedule
+                                    </NavLink>
+                                    
+                                    
                                 </ul>
                             </div>
                         )}
@@ -74,11 +82,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-            <div className="flex flex-col justify-center items-center pr-3">
-            <img className="rounded-full w-7" src={user?.photoURL} alt="" />
-            <p>{user?.displayName}</p>
-            </div>
-        
+                <div className="flex flex-col justify-center items-center pr-3">
+                    <img className="rounded-full w-7" src={user?.photoURL} alt="" />
+                    <p>{user?.displayName}</p>
+                </div>
+
                 {user?.email ? (<button className="btn text-[#8e4afc]" onClick={logout}>Logout</button>) : (<Link to='/login' className="btn text-[#8e4afc]">Login</Link>)}
             </div>
         </div>

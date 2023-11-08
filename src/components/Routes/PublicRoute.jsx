@@ -8,6 +8,9 @@ import Register from "../Register/Register";
 import About from "../About/About";
 import PrivateRoute from "./PrivateRoute";
 import PopularServices from "../Home/PopularServices";
+import MyService from "../Dashboard/MyService";
+import AddService from "../Dashboard/AddService";
+import MySchedule from "../Dashboard/MySchedule";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +34,18 @@ const router = createBrowserRouter([
         {
           path:'/services',
           element:<PopularServices></PopularServices>
+        },
+        {
+          path:'/myservice',
+          element:<PrivateRoute><MyService></MyService></PrivateRoute>
+        },
+        {
+          path:'/addservice',
+          element:<PrivateRoute><AddService></AddService></PrivateRoute>
+        },
+        {
+          path:'/myschedule',
+          element:<PrivateRoute><MySchedule></MySchedule></PrivateRoute>
         }
       ]
     },
