@@ -1,8 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/images/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 
 const Navbar = () => {
+    const { user,logout } = useContext(AuthContext);
+    console.log(user)
+
     const links = <>
         <NavLink to="/" className={({ isActive }) =>
             isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Home
@@ -57,7 +62,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='/login' className="btn text-[#8e4afc]">Login</Link>
+                {user?.email ?(<button className="btn text-[#8e4afc]" onClick={logout}>Logout</button>):(<Link to='/login' className="btn text-[#8e4afc]">Login</Link>)}
             </div>
         </div>
     );

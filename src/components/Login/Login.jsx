@@ -1,12 +1,14 @@
 import Lottie from "lottie-react";
 import loginAnimation from '../../assets/loginAnimation.json'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
+import swal from 'sweetalert2';
 import { AuthContext } from "../../provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
     const { user,login } = useContext(AuthContext);
-    console.log(user,login)
+    const navigate =useNavigate();
 
     const handleLogin = e => {
         e.preventDefault();
@@ -14,6 +16,16 @@ const Login = () => {
         const email= form.email.value;
         const password= form.password.value;
         console.log(email,password)
+
+        login(email,password)
+        .then(result =>{
+            const user = result.user;
+            swal.fire("Good job!", "User logged in Successfully!", "success")
+            navigate('/');
+        })
+        .catch(error =>{
+            Swal.fire('Error', 'Invalid!', 'error'); 
+            });
 
     }
     return (
