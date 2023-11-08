@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const { user,createUser } = useContext(AuthContext);
@@ -34,6 +35,7 @@ const Register = () => {
     }
     return (
         <div>
+            <Helmet><title>SwapSavvy | Register</title></Helmet>
         <h1 className="text-center text-4xl font-bold pt-10"><span className="text-[#8e4afc]">Register</span> Now</h1>
         <div>
 

@@ -5,7 +5,7 @@ import { AuthContext } from "../../provider/AuthProvider";
 
 
 const Navbar = () => {
-    const { user,logout } = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
     console.log(user)
 
     const links = <>
@@ -31,12 +31,18 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {links}
                         <li>
-                            <label tabIndex={0} className="btn btn-ghost rounded-btn text-[#8e4afc] ">Dashboard</label>
-                            <ul tabIndex={0} className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-12">
-                                <li><a>My Service</a></li>
-                                <li><a>Add Service</a></li>
-                                <li><a>My Schedule</a></li>
-                            </ul>
+                            {user?.email && (
+                                <div>
+                                    <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-[#8e4afc]">
+                                        Dashboard
+                                    </label>
+                                    <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
+                                        <li><a>My Serviceee</a></li>
+                                        <li><a>Add Service</a></li>
+                                        <li><a>My Schedule</a></li>
+                                    </ul>
+                                </div>
+                            )}
                         </li>
 
                     </ul>
@@ -51,18 +57,29 @@ const Navbar = () => {
                     </div>
 
                     <div className="dropdown dropdown-bottom flex justify-center items-center">
-                        <label tabIndex={0} className="btn btn-ghost rounded-btn text-[#8e4afc]">Dashboard</label>
-                        <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
-                            <li><a>My Service</a></li>
-                            <li><a>Add Service</a></li>
-                            <li><a>My Schedule</a></li>
-                        </ul>
+                        {user?.email && (
+                            <div>
+                                <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-[#8e4afc]">
+                                    Dashboard
+                                </label>
+                                <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
+                                    <li><a>My Service</a></li>
+                                    <li><a>Add Service</a></li>
+                                    <li><a>My Schedule</a></li>
+                                </ul>
+                            </div>
+                        )}
                     </div>
 
                 </ul>
             </div>
             <div className="navbar-end">
-                {user?.email ?(<button className="btn text-[#8e4afc]" onClick={logout}>Logout</button>):(<Link to='/login' className="btn text-[#8e4afc]">Login</Link>)}
+            <div className="flex flex-col justify-center items-center pr-3">
+            <img className="rounded-full w-7" src={user?.photoURL} alt="" />
+            <p>{user?.displayName}</p>
+            </div>
+        
+                {user?.email ? (<button className="btn text-[#8e4afc]" onClick={logout}>Logout</button>) : (<Link to='/login' className="btn text-[#8e4afc]">Login</Link>)}
             </div>
         </div>
     );
