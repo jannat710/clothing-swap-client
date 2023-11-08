@@ -8,8 +8,8 @@ import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
 
 const Login = () => {
-    const { user,login,googleSignIn } = useContext(AuthContext);
-    const navigate =useNavigate();
+    const { user, login, googleSignIn } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleGoogleSignIn = () => {
         googleSignIn()
@@ -22,18 +22,18 @@ const Login = () => {
     const handleLogin = e => {
         e.preventDefault();
         const form = e.target;
-        const email= form.email.value;
-        const password= form.password.value;
-        console.log(email,password)
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password)
 
-        login(email,password)
-        .then(result =>{
-            const user = result.user;
-            swal.fire("Good job!", "User logged in Successfully!", "success")
-            navigate('/');
-        })
-        .catch(error =>{
-            Swal.fire('Error', 'Invalid!', 'error'); 
+        login(email, password)
+            .then(result => {
+                const user = result.user;
+                swal.fire("Good job!", "User logged in Successfully!", "success")
+                navigate('/');
+            })
+            .catch(error => {
+                Swal.fire('Error', 'Invalid!', 'error');
             });
 
     }
@@ -69,7 +69,7 @@ const Login = () => {
                             <p className="px-8">New to this site? Please <Link className="text-[#8e4afc] font-medium" to='/register'>Register</Link></p>
                             <p className="text-center">or</p>
                             <div className="form-control mt-6 px-8 pb-8">
-                            <button onClick={handleGoogleSignIn} className="btn btn-outline text-[#8e4afc] hover:bg-[#8e4afc] hover:border-none hover:text-white">Sign in With Google</button>
+                                <button onClick={handleGoogleSignIn} className="btn btn-outline text-[#8e4afc] hover:bg-[#8e4afc] hover:border-none hover:text-white">Sign in With Google</button>
                             </div>
                         </div>
                     </div>

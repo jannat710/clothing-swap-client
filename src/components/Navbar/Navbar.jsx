@@ -72,8 +72,8 @@ const Navbar = () => {
                                     <NavLink to="/myschedule" className={({ isActive }) =>
                                         isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>My Schedule
                                     </NavLink>
-                                    
-                                    
+
+
                                 </ul>
                             </div>
                         )}
