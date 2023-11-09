@@ -5,6 +5,7 @@
       "serviceDescription": "Swap your clothes with others in the community",
       "serviceProviderImage": "https://i.ibb.co/FK2cHcJ/p1.jpg",
       "serviceProviderName": "Ema John",
+      "serviceProviderLocation": "UK",
       "servicePrice": "Free"
     },
     {
@@ -13,6 +14,7 @@
       "serviceDescription": "Join us for a monthly clothing swap event",
       "serviceProviderImage": "https://i.ibb.co/wd5b3KK/p2.jpg",
       "serviceProviderName": "Lydia Abbot",
+      "serviceProviderLocation": "Finland",
       "servicePrice": "$10 per event"
     },
     {
@@ -21,6 +23,7 @@
       "serviceDescription": "Get a box of pre-loved clothes delivered to your doorstep",
       "serviceProviderImage": "https://i.ibb.co/cCQNWGC/p3.jpg",
       "serviceProviderName": "Segal Coaching",
+      "serviceProviderLocation": "Pero",
       "servicePrice": "$25 per box"
     },
     {
@@ -29,6 +32,7 @@
       "serviceDescription": "Host a clothing swap party with your friends and family",
       "serviceProviderImage": "https://i.ibb.co/hDbPTZr/p4.jpg",
       "serviceProviderName": "Tommy ton",
+      "serviceProviderLocation": "canada",
       "servicePrice": "Free"
     }
   ]
