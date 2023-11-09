@@ -15,7 +15,7 @@ const Footer = () => {
 
                     <div className="relative">
                         <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" />
-                        <button className="btn btn-outline text-[#8e4afc] absolute top-0 right-0 rounded-l-none hover:bg-[#8e4afc] hover:border-none hover:text-white">Subscribe</button>
+                        <button className="btn btn-outline text-black absolute top-0 right-0 rounded-l-none hover:bg-black hover:border-none hover:text-white">Subscribe</button>
                     </div>
                 </fieldset>
             </div>
@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <aside className='flex flex-col justify-center items-center'>
                     <img src={logo} className='h-14 w-14' alt="" />
-                    <h1 className="font-bold text-xl">Swap<span className='text-[#8e4afc]'>Savvy</span></h1>
+                    <h1 className="font-bold text-xl">Swap<span className='text-black'>Savvy</span></h1>
                     <p>FASHIONZONE Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </aside>
                 <nav>

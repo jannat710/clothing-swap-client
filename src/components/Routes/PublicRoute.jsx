@@ -7,7 +7,6 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import About from "../About/About";
 import PrivateRoute from "./PrivateRoute";
-import PopularServices from "../Home/PopularServices";
 import MyService from "../Dashboard/MyService";
 import AddService from "../Dashboard/AddService";
 import MySchedule from "../Dashboard/MySchedule";
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <PrivateRoute><About></About></PrivateRoute>
-      },
-      {
-        path: '/services',
-        element: <PopularServices></PopularServices>
       },
       {
         path: '/myservice',

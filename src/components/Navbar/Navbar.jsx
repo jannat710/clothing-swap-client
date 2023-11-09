@@ -10,13 +10,13 @@ const Navbar = () => {
 
     const links = <>
         <NavLink to="/" className={({ isActive }) =>
-            isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Home
+            isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>Home
         </NavLink>
         <NavLink to="/services" className={({ isActive }) =>
-            isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Services
+            isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>Services
         </NavLink>
         <NavLink to="/about" className={({ isActive }) =>
-            isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>About
+            isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>About
         </NavLink>
     </>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
                         {/* <li>
                             {user?.email && (
                                 <div>
-                                    <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-[#8e4afc]">
+                                    <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-black">
                                         Dashboard
                                     </label>
                                     <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <img src={logo} className='h-12 w-12' alt="" />
-                <p className="font-bold text-xl">Swap<span className="text-[#8e4afc]">Savvy</span></p>
+                <p className="font-bold text-xl">Swap<span className="text-black">Savvy</span></p>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -59,18 +59,18 @@ const Navbar = () => {
                     <div className="dropdown dropdown-bottom flex justify-center items-center">
                         {user?.email && (
                             <div>
-                                <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-[#8e4afc]">
+                                <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-black">
                                     Dashboard
                                 </label>
                                 <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
                                     <NavLink to="/myservice" className={({ isActive }) =>
-                                        isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>My Service
+                                        isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>My-services
                                     </NavLink>
                                     <NavLink to="/addservice" className={({ isActive }) =>
-                                        isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>Add Service
+                                        isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>Add-services
                                     </NavLink>
                                     <NavLink to="/myschedule" className={({ isActive }) =>
-                                        isActive ? 'btn btn-outline text-[#8e4afc] btn-sm hover:bg-[#8e4afc] hover:border-none hover:text-white' : 'btn btn-ghost text-[#8e4afc] btn-sm'}>My Schedule
+                                        isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>My-schedules
                                     </NavLink>
 
 
@@ -87,7 +87,7 @@ const Navbar = () => {
                     <p>{user?.displayName}</p>
                 </div>
 
-                {user?.email ? (<button className="btn text-[#8e4afc]" onClick={logout}>Logout</button>) : (<Link to='/login' className="btn text-[#8e4afc]">Login</Link>)}
+                {user?.email ? (<button className="btn text-black" onClick={logout}>Logout</button>) : (<Link to='/login' className="btn text-black">Login</Link>)}
             </div>
         </div>
     );

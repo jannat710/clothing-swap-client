@@ -43,7 +43,7 @@ const handleSubmit = (e) => {
 const AddService = () => {
     return (
         <div>
-            <h1 className="text-center text-4xl font-bold pt-10">Add <span className="text-[#8e4afc]">Service</span></h1>
+            <h1 className="text-center text-4xl font-bold pt-10">Add <span className="text-black">Service</span></h1>
 
             <form onSubmit={handleSubmit} className="card-body">
                 <div className="form-control">
@@ -89,7 +89,7 @@ const AddService = () => {
                     <input type="text" name='description' placeholder="Description" className="input input-bordered" required />
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-outline text-[#8e4afc] hover:bg-[#8e4afc] hover:border-none hover:text-white">Add</button>
+                    <button className="btn btn-outline text-black hover:bg-black hover:border-none hover:text-white">Add</button>
                 </div>
             </form>
         </div>

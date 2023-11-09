@@ -10,8 +10,9 @@ const HappyClient = () => {
                 width: '100%',
                 background: 'black',
                 marginTop: '40px',
+                marginBottom: '40px',
                 color: 'white',
-                padding: '40px',
+                padding: '30px',
             }}>
                 <div>
                     <p>Happy Clients</p>

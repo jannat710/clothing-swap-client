@@ -36,7 +36,7 @@ const Register = () => {
     return (
         <div>
             <Helmet><title>SwapSavvy | Register</title></Helmet>
-            <h1 className="text-center text-4xl font-bold pt-10"><span className="text-[#8e4afc]">Register</span> Now</h1>
+            <h1 className="text-center text-4xl font-bold pt-10"><span className="text-black">Register</span> Now</h1>
             <div>
 
                 <div className="hero-content flex-col lg:flex-row-reverse">
@@ -71,11 +71,11 @@ const Register = () => {
                                 <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-outline text-[#8e4afc] hover:bg-[#8e4afc] hover:border-none hover:text-white">Register</button>
+                                <button className="btn btn-outline text-black hover:bg-black hover:border-none hover:text-white">Register</button>
                             </div>
                         </form>
                         <div>
-                            <p className="px-8 pb-8">Already have an account? Please <Link className="text-[#8e4afc] font-medium" to='/login'>Login</Link></p>
+                            <p className="px-8 pb-8">Already have an account? Please <Link className="text-black font-medium" to='/login'>Login</Link></p>
                         </div>
                     </div>
                 </div>
