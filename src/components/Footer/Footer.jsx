@@ -1,58 +1,49 @@
+import { FaFacebookF, FaGoogle, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 import logo from '../../assets/images/logo.png'
-import { AiFillYoutube } from 'react-icons/ai';
-import { FaTwitter } from 'react-icons/fa';
-import { BsFacebook } from 'react-icons/bs';
-
 
 const Footer = () => {
     return (
-        <div className="p-10 bg-base-200 text-base-content">
-            <h1 className="text-center">SIGN UP FOR OUR NEWSLETTER</h1>
-            <p className="text-center py-4">Enter your email address</p>
-            <div className="flex justify-center items-center">
-
-                <fieldset className="form-control w-80 pb-8">
-
-                    <div className="relative">
-                        <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" />
-                        <button className="btn btn-outline text-black absolute top-0 right-0 rounded-l-none hover:bg-black hover:border-none hover:text-white">Subscribe</button>
-                    </div>
-                </fieldset>
-            </div>
-            <footer className="footer">
-
+        <div>
+            <footer className="footer p-10 bg-[#F9F9F9]">
                 <aside className='flex flex-col justify-center items-center'>
-                    <img src={logo} className='h-14 w-14' alt="" />
-                    <h1 className="font-bold text-xl">Swap<span className='text-black'>Savvy</span></h1>
+                    <img src={logo} className='h-16 w-full' alt="" />
                     <p>FASHIONZONE Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </aside>
+
                 <nav>
-                    <header className="footer-title">Services</header>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <header className="footer-title border-b w-full py-3">CONTACT US</header>
+                    <a className="link link-hover">123 ABS Street, Uni 21, Bangladesh</a>
+                    <a className="link link-hover">+88 123456789</a>
+                    <a className="link link-hover">Mon - Fri: 08:00 - 22:00</a>
+                    <a className="link link-hover">Sat - Sun: 10:00 - 23:00</a>
                 </nav>
-                <nav>
-                    <header className="footer-title">Company</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav className=''>
-                    <header className="footer-title">Social</header>
-                    <div className="flex gap-4 md:place-self-center md:justify-self-end">
-                        <a><BsFacebook className='text-blue-600 h-6 w-6'></BsFacebook>
-                        </a>
-                        <a><FaTwitter className='text-blue-600 h-6 w-6'></FaTwitter></a>
-                        <a><AiFillYoutube className='text-red-600 h-6 w-6'></AiFillYoutube></a>
-                    </div>
-                </nav>
+                <form>
+                    <header className="footer-title border-b w-full py-3">Newsletter</header>
+                    <fieldset className="form-control w-80">
+                        <div className="flex">
+                            <input type="text" placeholder="Enter your email address" className="rounded-sm input input-bordered join-item" />
+                            <button className="btn border-none rounded-sm ml-2 bg-[#D11752] text-white">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+
             </footer>
-            <div>
-                <p className='text-center pt-5'>Copyright © 2023 - All right reserved</p>
+            <hr className='w-10/12 mx-auto' />
+            <div className="footer items-center py-5 bg-[#F9F9F9] flex flex-col">
+                
+                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                    <a><FaFacebookF className="bg-[#D11752] text-white h-8 w-8 p-2 rounded-full"></FaFacebookF></a>
+                    <a><FaYoutube className="bg-[#D11752] text-white h-8 w-8 p-2 rounded-full"></FaYoutube></a>
+                    <a><FaGoogle className="bg-[#D11752] text-white h-8 w-8 p-2 rounded-full"></FaGoogle></a>
+                    <a><FaPinterest className="bg-[#D11752] text-white h-8 w-8 p-2 rounded-full"></FaPinterest></a>
+                    <a className="bg-[#D11752] h-8 w-8 p-2 text-white rounded-full"><FaTwitter></FaTwitter></a>
+                </nav>
+                <aside className="items-center ">
+                    <p>Copyright © 2023 - All right reserved</p>
+                </aside>
             </div>
+            
         </div>
     );
 };

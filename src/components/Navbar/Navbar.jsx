@@ -9,20 +9,38 @@ const Navbar = () => {
     console.log(user)
 
     const links = <>
-        <NavLink to="/" className={({ isActive }) =>
-            isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>Home
-        </NavLink>
-        <NavLink to="/services" className={({ isActive }) =>
-            isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>Services
-        </NavLink>
-        <NavLink to="/about" className={({ isActive }) =>
-            isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>About
-        </NavLink>
+        <li>
+            <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#D11752] font-semibold text-sm " : "font-semibold text-sm"
+                }>
+                Home
+            </NavLink>
+        </li>
+        <li>
+            <NavLink
+                to="/services"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#D11752] font-semibold text-sm " : "font-semibold text-sm"
+                }>
+                Services
+            </NavLink>
+        </li>
+        <li>
+            <NavLink
+                to="/about"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#D11752] font-semibold text-sm " : "font-semibold text-sm"
+                }>
+                About
+            </NavLink>
+        </li>
     </>
 
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar border-b-2 p-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,25 +48,11 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {links}
-                        {/* <li>
-                            {user?.email && (
-                                <div>
-                                    <label tabIndex={0} className="btn btn-ghost dropdown-bottom rounded-btn text-black">
-                                        Dashboard
-                                    </label>
-                                    <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
-                                        <li><a>My Serviceee</a></li>
-                                        <li><a>Add Service</a></li>
-                                        <li><a>My Schedule</a></li>
-                                    </ul>
-                                </div>
-                            )}
-                        </li> */}
 
                     </ul>
                 </div>
-                <img src={logo} className='h-12 w-12' alt="" />
-                <p className="font-bold text-xl">Swap<span className="text-black">Savvy</span></p>
+                <img src={logo} className='h-12 w-1/3' alt="" />
+                
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

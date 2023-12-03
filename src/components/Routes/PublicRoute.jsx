@@ -10,7 +10,6 @@ import PrivateRoute from "./PrivateRoute";
 import MyService from "../Dashboard/MyService";
 import AddService from "../Dashboard/AddService";
 import MySchedule from "../Dashboard/MySchedule";
-import ServiceDetails from "../Services/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -21,17 +20,12 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch(`https://clothing-swap-server.vercel.app/services`),
+        // loader: () => fetch(`http://localhost:5000/services`),
       },
       {
         path: '/services',
         element: <Services></Services>,
-        loader: () => fetch(`https://clothing-swap-server.vercel.app/services`),
-      },
-      {
-        path: '/services-details/:id',
-        element: <ServiceDetails></ServiceDetails>,
-        loader: () => fetch(`https://clothing-swap-server.vercel.app/services`),
+        // loader: () => fetch(`http://localhost:5000/services`),
       },
       {
         path: '/about',
