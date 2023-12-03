@@ -1,25 +1,27 @@
-import { useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
-import { Navigate } from "react-router-dom";
+
+import { Navigate, useLocation } from "react-router-dom";
 import Lottie from "lottie-react";
 import loadingAnimation from '../../assets/loadingAnimation.json'
+import useAuth from "../hook/useAuth";
 
 
 const PrivateRoute = ({ children }) => {
-    const { user, loading } = useContext(AuthContext);
+    const { user, loading } = useAuth();
+
+    const location = useLocation();
 
     if (loading) {
-        return <div> <Lottie className="h-1/3 w-1/3 mx-auto" animationData={loadingAnimation}></Lottie>
-        </div>;
+        return <div><Lottie className="h-96 w-96 mx-auto" animationData={loadingAnimation}></Lottie></div>;
     }
 
     if (!loading && !user?.email) {
-        return <Navigate to='/login'></Navigate>;
+        return <Navigate to='/login' state={{from: location}} replace></Navigate>;
 
     }
 
 
     return children;
+
 };
 
 export default PrivateRoute;

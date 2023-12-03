@@ -1,15 +1,35 @@
-import Lottie from "lottie-react";
-import swal from 'sweetalert2';
-import registerAnimation from '../../assets/registerAnimation.json'
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
+
+import Google from '../../assets/icon/google.png'
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import useAuth from "../hook/useAuth";
+import useAxios from '../hook/useAxios';
+
 
 const Register = () => {
-    const { user, createUser } = useContext(AuthContext);
-    console.log(user)
+    const { createUser, updateUserProfile, googleSignIn } = useAuth();
+    const navigate = useNavigate();
+    const axiosOpen = useAxios();
+
+
+    //Google
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+        .then(result => {
+            console.log(result.user);
+            const userInfo = {
+                email: result.user?.email,
+                name: result.user?.displayName,
+                photo: result.user?.photoURL
+            }
+            axiosOpen.post('/users', userInfo)
+                .then(res => {
+                    console.log(res.data);
+                    navigate('/');
+                })
+        })
+    }
 
 
     const handleRegister = e => {
@@ -22,30 +42,62 @@ const Register = () => {
         console.log(name, email, url, password)
 
         createUser(email, password)
-            .then(result => {
-                const user = result.user;
-                swal.fire("Good job!", "User Created Successfully!", "success")
-                console.log(user)
-            })
-            .catch(error => {
-                Swal.fire('Error', 'Invalid!', 'error');
-            });
+        .then(result => {
+            const loggedUser = result.user;
+            console.log(loggedUser);
+            updateUserProfile(name, url)
+                .then(() => {
+                    const userInfo = {
+                        name: name,
+                        email: email,
+                        photo: url
+                    }
+                    axiosOpen.post('/users', userInfo)
+                        .then(res => {
+                            if (res.insertedId) {
+                                console.log('user added to the database');
+                                Swal.fire({
+                                    position: "center",
+                                    icon: "success",
+                                    title: "User created successfully",
+                                    showConfirmButton: false,
+                                    timer: 1500
+                                });
+
+                                navigate('/');
+                            }
+                        })
+
+                })
+                .catch(error => console.log(error))
+        })
+}
 
 
-    }
+
+
+    
+
     return (
         <div>
-            <Helmet><title>SwapSavvy | Register</title></Helmet>
-            <h1 className="text-center text-4xl font-bold pt-10"><span className="text-black">Register</span> Now</h1>
-            <div>
+            <Helmet><title>ClothingSwap | Sign In</title></Helmet>
+            <div className="hero min-h-screen">
+                <div className="flex-col max-w-2xl md:flex-row-reverse">
+                    <div className="">
+                        <div className="w-96 px-8">
+                            <h1 className="py-8 text-2xl font-bold">Sign up to
+                                <span className="font-bold text-[#D11752]"> Clothing Swap</span>
+                            </h1>
+                            <div className="form-control">
+                                <button onClick={handleGoogleSignIn} className="btn rounded-3xl  border-2 border-[#D11752]">
+                                    <img className="h-8" src={Google} alt="" />
+                                    Sign in with Google
+                                </button>
 
-                <div className="hero-content flex-col lg:flex-row-reverse">
-
-                    <div className="text-center lg:text-left">
-                        <Lottie className="h-1/2 w-1/2 mx-auto" animationData={registerAnimation}></Lottie>
-                    </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleRegister} className="card-body">
+                                <p className="text-center text-sm pt-5 divider text-[#6e6d7a]">or sign in with email</p>
+                            </div>
+                        </div>
+                        <form onSubmit={handleRegister} className="card-body w-96">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
@@ -58,28 +110,30 @@ const Register = () => {
                                 </label>
                                 <input type="url" name='url' placeholder="Photo URL" className="input input-bordered" required />
                             </div>
+
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text font-bold">Email</span>
                                 </label>
-                                <input type="email" name='email' placeholder="Enter your email" className="input input-bordered" required />
+                                <input type="email" name="email" placeholder="Enter your email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text font-bold">Password</span>
                                 </label>
-                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
+                                <input type="password" name="password" placeholder="Enter your password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-outline text-black hover:bg-black hover:border-none hover:text-white">Register</button>
+                                <input className="btn rounded-3xl bg-[#D11752] text-white" type="submit" value="Sign In" />
                             </div>
                         </form>
-                        <div>
-                            <p className="px-8 pb-8">Already have an account? Please <Link className="text-black font-medium" to='/login'>Login</Link></p>
-                        </div>
+                        <p className='text-center pb-5'><small className="text-sm text-[#6e6d7a]">Do not have an account? <Link className="underline font-bold" to="/register">Register</Link> </small></p>
+
                     </div>
                 </div>
+
             </div>
+
         </div>
     );
 };

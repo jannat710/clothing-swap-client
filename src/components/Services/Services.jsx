@@ -6,7 +6,7 @@ const Services = () => {
 
     return (
         <div>
-            <Helmet><title>SwapSavvy | Services</title></Helmet>
+            <Helmet><title>ClothingSwap | Services</title></Helmet>
             <h1 className="text-center text-4xl font-bold pt-10">Services</h1>
         </div>
     );
