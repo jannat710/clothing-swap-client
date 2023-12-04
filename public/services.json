@@ -1,0 +1,75 @@
+[
+    
+    {
+        "serviceImage": "https://i.ibb.co/0nZsMX4/Clothing-Swap-Event.jpg",
+        "serviceName": "Clothing Swap Event",
+        "serviceDescription": "Join our offline clothing swap event and exchange clothes with fellow fashion enthusiasts.",
+        "serviceProviderImage": "https://i.ibb.co/GT4wWyc/p2.jpg",
+        "serviceProviderName": "John Smith",
+        "serviceArea": "New York City",
+        "servicePrice": "Free"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/t3y5QXw/Swap-Shop-Pop-up.png",
+        "serviceName": "Swap Shop Pop-up",
+        "serviceDescription": "Visit our offline swap shop where you can bring your gently used clothes and swap them for new ones.",
+        "serviceProviderImage": "https://i.ibb.co/qjGwJk8/p3.jpg",
+        "serviceProviderName": "Jane Doe",
+        "serviceArea": "Los Angeles",
+        "servicePrice": "Free"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/TWD0qqV/Fashion-Swap-Party.jpg",
+        "serviceName": "Fashion Swap Party",
+        "serviceDescription": "Join our offline fashion swap party and enjoy a fun evening of swapping clothes and meeting new people.",
+        "serviceProviderImage": "https://i.ibb.co/g69z9yZ/p4.jpg",
+        "serviceProviderName": "David Johnson",
+        "serviceArea": "London",
+        "servicePrice": "£5"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/805J2Cx/Swap-and-Sip.jpg",
+        "serviceName": "Swap and Sip",
+        "serviceDescription": "Experience an offline clothing swap event with a twist - enjoy some drinks while swapping fashionable items.",
+        "serviceProviderImage": "https://i.ibb.co/pK8d8Lp/pp1.jpg",
+        "serviceProviderName": "Emily Johnson",
+        "serviceArea": "San Francisco",
+        "servicePrice": "$10"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/mTbJ6vR/Swap-Boutique.png",
+        "serviceName": "Swap Boutique",
+        "serviceDescription": "Visit our offline boutique where you can swap your clothes for pre-loved fashion items.",
+        "serviceProviderImage": "https://i.ibb.co/qFy493c/pp2.jpg",
+        "serviceProviderName": "Alex Rodriguez",
+        "serviceArea": "Nepal",
+        "servicePrice": "$10"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/PTwCwTW/Vintage-Clothing-Swaps.jpg",
+        "serviceName": "Vintage Clothing Swaps",
+        "serviceDescription": "Vintage Clothing Swaps are events where people gather to exchange or trade vintage clothing items.",
+        "serviceProviderImage": "https://i.ibb.co/z2vqFB8/pp4.jpg",
+        "serviceProviderName": "Emma Thompson",
+        "serviceArea": "San Francisco",
+        "servicePrice": "$10"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/9n15yhJ/Secondhand-Clothing-Exchanges.jpg",
+        "serviceName": "Secondhand Clothing Exchanges",
+        "serviceDescription": "Secondhand Clothing Exchanges are places where you can trade or purchase pre-owned clothes and accessories.",
+        "serviceProviderImage": "https://i.ibb.co/TBvnfLv/pp3.jpg",
+        "serviceProviderName": "Michael Davis",
+        "serviceArea": "Canada",
+        "servicePrice": "$5"
+      },
+      {
+        "serviceImage": "https://i.ibb.co/qJQN7qy/Fashion-Swap-Meetups.jpg",
+        "serviceName": "Fashion Swap Meetups",
+        "serviceDescription": "Fashion Swap Meetups are offline events where fashion enthusiasts gather to swap clothes and accessories.",
+        "serviceProviderImage": "https://i.ibb.co/b67zNVd/pp5.jpg",
+        "serviceProviderName": "Sophia Lee",
+        "serviceArea": "Finland",
+        "servicePrice": "$10"
+      }
+]
