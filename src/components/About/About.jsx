@@ -6,6 +6,7 @@ const About = () => {
     return (
         <div>
             <Helmet><title>ClothingSwap | About</title></Helmet>
+            <div className="divider divider-neutral">Neutral</div>
             <h1 className="text-center">About us</h1>
             <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10">
                 <div className=" h-full w-full md:h-1/2 md:w-1/3 lg:h-1/2 lg:w-1/3  p-9">

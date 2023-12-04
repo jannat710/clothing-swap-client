@@ -1,0 +1,44 @@
+[
+    {
+      "_id": "1",
+      "name": "John Smith",
+      "image": "https://i.ibb.co/GT4wWyc/p2.jpg",
+      "review": "I had a fantastic time at the clothing swap event! Got some amazing pieces.",
+      "rating": 3
+    },
+    {
+      "_id": "2",
+      "name": "Jane Doe",
+      "image": "https://i.ibb.co/qjGwJk8/p3.jpg",
+      "review": "The clothing swap was a blast! Found some unique items that I absolutely love.",
+      "rating": 4
+    },
+    {
+      "_id": "3",
+      "name": "David Johnson",
+      "image": "https://i.ibb.co/g69z9yZ/p4.jpg",
+      "review": "Attended the clothing swap and it exceeded my expectations. Scored some great finds!",
+      "rating": 5
+    },
+    {
+      "_id": "4",
+      "name": "Emily Johnson",
+      "image": "https://i.ibb.co/pK8d8Lp/pp1.jpg",
+      "review": "The clothing swap event was amazing! Loved the sustainable fashion options available.",
+      "rating": 3
+    },
+    {
+      "_id": "5",
+      "name": "Alex Rodriguez",
+      "image": "https://i.ibb.co/qFy493c/pp2.jpg",
+      "review": "Had a wonderful time at the clothing swap. Discovered trendy pieces at a fraction of the cost.",
+      "rating": 4
+    },
+    {
+      "_id": "6",
+      "name": "Emma Thompson",
+      "image": "https://i.ibb.co/z2vqFB8/pp4.jpg",
+      "review": "The clothing swap event was a hit! Found stylish items and met fellow fashion enthusiasts.",
+      "rating": 4
+    }
+  ]

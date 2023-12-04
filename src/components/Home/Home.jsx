@@ -4,6 +4,7 @@ import Slider from "./Slider";
 import Support from "../Features/Support";
 import ServicesArea from "../Features/ServicesArea";
 import { Helmet } from "react-helmet-async";
+import Testimonials from "./Testimonials";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Support></Support>
             <ServicesArea></ServicesArea>
+            <Testimonials></Testimonials>
         </div>
 
     );
