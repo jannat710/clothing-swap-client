@@ -10,8 +10,10 @@ import photo7 from '../../assets/images/photo7.jpg'
 const Gallery = () => {
     return (
         <div>
-            <h1 className="text-center text-4xl font-bold pt-10">View <span className="text-black">Gallery</span></h1>
-            <p className="text-center py-5">Welcome to our photo gallery! Explore the stunning collection of clothing swap<br /> moments captured in these pictures.</p>
+            <div className="font-semibold text-3xl mx-20">
+                <h3 className="text-[#D11752] py-10 text-sm md:text-xl lg:text-3xl  uppercase divider divider-neutral"><span className="px-10">View Gallery</span></h3>
+            </div>
+            <p className="text-center pb-5">Welcome to our photo gallery! Explore the stunning collection of clothing swap<br /> moments captured in these pictures.</p>
             <Marquee direction="left" speed={70} pauseOnHover={true} gradient={true}>
                 <div className="flex gap-6">
                     <div className="relative">

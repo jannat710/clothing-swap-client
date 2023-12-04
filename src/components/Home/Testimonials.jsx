@@ -25,10 +25,10 @@ const Testimonials = () => {
   return (
     <div>
       {testimonials.length}length
-      <div className="font-semibold text-3xl">
+      <div className="font-semibold text-3xl mx-20">
         <h3 className="text-[#D11752] py-10 text-sm md:text-xl lg:text-3xl  uppercase divider divider-neutral"><span className="px-10">Customer Testimonials</span></h3>
       </div>
-      <Swiper  navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {
           testimonials.map(testimonial => <SwiperSlide key={testimonial._id}>
             <div className="py-10 flex flex-col justify-center items-center">
