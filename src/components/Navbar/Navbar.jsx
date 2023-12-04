@@ -88,13 +88,13 @@ const Navbar = () => {
                                 </label>
                                 <ul tabIndex={0} className="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
                                     <NavLink to="/myservice" className={({ isActive }) =>
-                                        isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>My-services
+                                        isActive ? 'text-[#D11752] font-semibold text-sm ' : 'font-semibold text-sm'}>My-services
                                     </NavLink>
                                     <NavLink to="/addservice" className={({ isActive }) =>
-                                        isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>Add-services
+                                        isActive ? 'text-[#D11752] font-semibold text-sm ' : 'font-semibold text-sm'}>Add-services
                                     </NavLink>
                                     <NavLink to="/myschedule" className={({ isActive }) =>
-                                        isActive ? 'btn btn-outline text-black btn-sm hover:bg-black hover:border-none hover:text-white' : 'btn btn-ghost text-black btn-sm'}>My-schedules
+                                        isActive ? 'text-[#D11752] font-semibold text-sm ' : 'font-semibold text-sm'}>My-schedules
                                     </NavLink>
 
 
