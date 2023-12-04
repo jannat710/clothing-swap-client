@@ -19,7 +19,7 @@ const Support = () => {
       </div>
       <div className="mt-4 flex gap-2">
         <input type="text" placeholder="Type your message..." className="w-full border border-gray-300 p-2 rounded-md" />
-        <button className="btn bg-[#D11752] w-1/5 text-white border-none btn-md">Send</button>
+        <button className="btn bg-[#D11752] w-1/5 rounded-sm text-white border-none btn-md">Send</button>
       </div>
     </div>
   );

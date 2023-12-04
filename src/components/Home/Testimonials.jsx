@@ -31,7 +31,7 @@ const Testimonials = () => {
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {
           testimonials.map(testimonial => <SwiperSlide key={testimonial._id}>
-            <div className="py-10 flex flex-col justify-center items-center">
+            <div className="py-10 flex flex-col justify-center items-center bg-[#2A2929] text-white">
               <img className="h-16 w-16 rounded-full" src={testimonial.image} alt="" />
               <Rating
                 style={{ maxWidth: 180 }}
