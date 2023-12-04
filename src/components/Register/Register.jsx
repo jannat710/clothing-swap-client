@@ -127,7 +127,7 @@ const Register = () => {
                                 <input className="btn rounded-3xl bg-[#D11752] text-white" type="submit" value="Sign In" />
                             </div>
                         </form>
-                        <p className='text-center pb-5'><small className="text-sm text-[#6e6d7a]">Do not have an account? <Link className="underline font-bold" to="/register">Register</Link> </small></p>
+                        <p className='text-center pb-5'><small className="text-sm text-[#6e6d7a]">Already have an account? Please <Link className="underline font-bold" to="/login">Login</Link> </small></p>
 
                     </div>
                 </div>

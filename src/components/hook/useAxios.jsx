@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const axiosOpen = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://clothing-swap-server.vercel.app'
 })
 
 const useAxios = () => {
