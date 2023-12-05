@@ -3,7 +3,7 @@
 const ServicesArea = () => {
     return (
         <div>
-            Services area
+            {/* Services area */}
         </div>
     );
 };

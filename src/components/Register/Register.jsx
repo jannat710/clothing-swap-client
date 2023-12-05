@@ -124,7 +124,7 @@ const Register = () => {
                                 <input type="password" name="password" placeholder="Enter your password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn rounded-3xl bg-[#D11752] text-white" type="submit" value="Sign In" />
+                                <input className="btn rounded-3xl bg-[#D11752] text-white" type="submit" value="Sign Up" />
                             </div>
                         </form>
                         <p className='text-center pb-5'><small className="text-sm text-[#6e6d7a]">Already have an account? Please <Link className="underline font-bold" to="/login">Login</Link> </small></p>

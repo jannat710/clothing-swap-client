@@ -1,11 +1,11 @@
-import { Helmet } from "react-helmet-async";
+
 import about from '../../assets/images/photo7.jpg'
 
 
 const About = () => {
     return (
         <div>
-            <Helmet><title>ClothingSwap | About</title></Helmet>
+            
             <div className='relative'>
             <img className='h-[80vh] py-10 w-full mx-auto' src={about} alt="" />
             <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center px-24'>
