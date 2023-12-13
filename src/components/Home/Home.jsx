@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import LatestNews from "../Features/LatestNews";
 import About from "../About/About";
 import PopularServices from "./PopularServices";
+import HappyClient from "./HappyClient";
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
             <About></About>
             <Support></Support>
             <ServicesArea></ServicesArea>
+            <HappyClient></HappyClient>
             <Testimonials></Testimonials>
         </div>
 
