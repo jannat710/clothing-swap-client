@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        // loader: () => fetch(`https://clothing-swap-server.vercel.app/services`),
+        
       },
       {
         path: '/services',
