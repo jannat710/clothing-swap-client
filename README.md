@@ -5,7 +5,9 @@ mongodb etc.
 - Used new packages like react-simple-typewriter,react rating,swiper slider and may more.
 - Services Card Design
 - Used Sweet Alert
-- Unique Feature :Attractive view gallery, Happy Client
+### Unique Feature :
+- Attractive view gallery,
+- Happy Client
 
 Live site Link:
 https://clothing-swap-7d54d.web.app
